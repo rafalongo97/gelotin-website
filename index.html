@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gelotin - Gelo puro, produzido com água tratada e qualidade garantida. Gelo em tubos e em escamas com entrega rápida e máxima higiene para toda a região.">
+    <title>Gelotin - Gelo Puro e de Qualidade Garantida</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">GELO</span>TIN
+            </a>
+            
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#calculadora" class="nav-link">Calculadora de Gelo</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20gelo." target="_blank" rel="noopener noreferrer" class="btn-icon" title="WhatsApp" aria-label="Fale pelo WhatsApp">
+                    <i data-lucide="phone"></i>
+                </a>
+                <a href="#localizacao" class="btn-icon" title="Nossa Localização" aria-label="Nossa Localização">
+                    <i data-lucide="map-pin"></i>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Tecnologia e Higiene Industrial
+                </div>
+                <h1 class="hero-title">Gelo puro, produzido com água tratada e qualidade garantida.</h1>
+                <p class="hero-subtitle">Produção controlada, segurança sanitária e entrega rápida para o seu comércio, evento ou residência.</p>
+                <div class="hero-ctas">
+                    <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20gelo." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i data-lucide="message-circle"></i> Solicitar Orçamento via WhatsApp
+                    </a>
+                    <a href="#produtos" class="btn btn-secondary">
+                        Ver Nossos Produtos
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="var(--color-bg)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SOBRE / QUALIDADE -->
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <div class="grid grid-2-cols align-center gap-lg">
+                <div class="sobre-content">
+                    <div class="section-tag">Pureza Incomparável</div>
+                    <h2 class="section-title">Como garantimos a melhor qualidade do mercado?</h2>
+                    <p class="section-description">Na Gelotin, acreditamos que gelo não é tudo igual. O gelo de alta qualidade começa com água purificada e um processo industrial rigorosamente controlado, livre de contato humano.</p>
+                    
+                    <div class="qualidades-list">
+                        <div class="qualidade-item">
+                            <div class="qualidade-icon">
+                                <i data-lucide="droplet"></i>
+                            </div>
+                            <div class="qualidade-text">
+                                <h3>Água Tratada</h3>
+                                <p>Toda a nossa produção utiliza água 100% filtrada e tratada de fontes testadas regularmente, garantindo pureza total.</p>
+                            </div>
+                        </div>
+
+                        <div class="qualidade-item">
+                            <div class="qualidade-icon">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div class="qualidade-text">
+                                <h3>Armazenamento Seguro</h3>
+                                <p>Câmaras frias de última geração que mantêm a temperatura ideal e evitam qualquer contaminação externa.</p>
+                            </div>
+                        </div>
+
+                        <div class="qualidade-item">
+                            <div class="qualidade-icon">
+                                <i data-lucide="thermometer-snowflake"></i>
+                            </div>
+                            <div class="qualidade-text">
+                                <h3>Congelamento Rápido</h3>
+                                <p>Processo em baixíssimas temperaturas que proporciona blocos e escamas compactos e mais resistentes.</p>
+                            </div>
+                        </div>
+
+                        <div class="qualidade-item">
+                            <div class="qualidade-icon">
+                                <i data-lucide="hourglass"></i>
+                            </div>
+                            <div class="qualidade-text">
+                                <h3>Maior Durabilidade</h3>
+                                <p>Gelo mais denso que derrete lentamente, mantendo suas bebidas geladas por muito mais tempo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sobre-visual">
+                    <div class="glass-card-wrapper">
+                        <div class="glass-card sobre-image-card">
+                            <img src="images/hero_bg.png" alt="Gelo cristalino de alta qualidade Gelotin" class="img-responsive image-rounded">
+                            <div class="floating-badge">
+                                <div class="floating-badge-icon"><i data-lucide="award"></i></div>
+                                <div>
+                                    <h4>Padrão Premium</h4>
+                                    <p>Higiene controlada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="section produtos-section bg-light">
+        <div class="container">
+            <div class="text-center max-w-md mx-auto mb-lg">
+                <div class="section-tag">Nossos Produtos</div>
+                <h2 class="section-title">Gelo Sob Medida para Cada Necessidade</h2>
+                <p class="section-description">Seja para o seu restaurante, evento especial, posto de combustível ou conservação de pescados, temos o gelo ideal com a embalagem certa.</p>
+            </div>
+
+            <div class="grid grid-2-cols gap-md">
+                <!-- Produto 1: Gelo em Tubos -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/gelo_tubo.png" alt="Gelo em Tubos Gelotin" class="product-img">
+                        <span class="product-badge">O Mais Vendido</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-pkg"><i data-lucide="package"></i> Embalagem 3kg</span>
+                            <span class="product-temp"><i data-lucide="snowflake"></i> Super Denso</span>
+                        </div>
+                        <h3 class="product-title">Gelo em Tubos</h3>
+                        <p class="product-desc">Cilíndrico, totalmente translúcido e livre de impurezas. Perfeito para servir em copos e baldes de gelo. Devido ao seu formato e densidade, derrete muito mais devagar.</p>
+                        
+                        <div class="product-uses">
+                            <h4>Ideal para:</h4>
+                            <ul>
+                                <li><i data-lucide="check"></i> Consumo direto em bebidas (sucos, drinks, refrigerantes)</li>
+                                <li><i data-lucide="check"></i> Eventos, casamentos, shows e festas</li>
+                                <li><i data-lucide="check"></i> Bares, restaurantes e buffets</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-footer">
+                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Gelo%20em%20Tubos%20de%203kg." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                                <i data-lucide="shopping-cart"></i> Pedir no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2: Gelo em Escamas -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/gelo_escama.png" alt="Gelo em Escamas Gelotin" class="product-img">
+                        <span class="product-badge accent">Conservação Perfeita</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-pkg"><i data-lucide="package"></i> Embalagem 10kg</span>
+                            <span class="product-temp"><i data-lucide="zap"></i> Resfriamento Rápido</span>
+                        </div>
+                        <h3 class="product-title">Gelo em Escamas</h3>
+                        <p class="product-desc">Escamas macias e finas com excelente área de contato térmico. Ideal para refrigeração uniforme e transporte seguro de alimentos perecíveis.</p>
+                        
+                        <div class="product-uses">
+                            <h4>Ideal para:</h4>
+                            <ul>
+                                <li><i data-lucide="check"></i> Uso comercial em peixarias e supermercados</li>
+                                <li><i data-lucide="check"></i> Conservação de bebidas em grandes caixas térmicas</li>
+                                <li><i data-lucide="check"></i> Processos industriais e panificação</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-footer">
+                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Gelo%20em%20Escamas%20de%2010kg." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                                <i data-lucide="shopping-cart"></i> Pedir no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA DE GELO -->
+    <section id="calculadora" class="section calculadora-section">
+        <div class="container max-w-lg">
+            <div class="text-center mb-lg">
+                <div class="section-tag">Planejador</div>
+                <h2 class="section-title">Descubra Quanto Gelo Você Precisa</h2>
+                <p class="section-description">Evite que faltar gelo estrague seu evento ou que você compre em excesso. Nossa calculadora estima a quantidade ideal com base no seu perfil de uso.</p>
+            </div>
+
+            <div class="glass-card calculator-card">
+                <form id="calc-form" class="calc-form">
+                    <div class="form-group">
+                        <label for="event-type">Tipo de Evento / Finalidade</label>
+                        <select id="event-type" class="form-control">
+                            <option value="churrasco">Churrasco / Festa Informal (Bebidas em lata/garrafa)</option>
+                            <option value="casamento">Casamento / Jantar Formal (Drinks finos e buffet)</option>
+                            <option value="coquetel">Coquetel / Drinks (Consumo intensivo em copos)</option>
+                            <option value="conservacao">Apenas Resfriamento de Bebidas (Grandes caixas térmicas)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="people-count">Número Estimado de Pessoas</label>
+                        <div class="range-input-container">
+                            <input type="range" id="people-count" min="5" max="300" step="5" value="30" class="range-slider">
+                            <div class="people-display"><span id="people-value">30</span> pessoas</div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-results">
+                        <div class="results-header">Resultado Estimado</div>
+                        <div class="results-grid">
+                            <div class="result-box">
+                                <span class="result-label">Gelo em Tubos (Ideal p/ Copos)</span>
+                                <div class="result-val"><span id="tubo-result">0</span> kg</div>
+                                <span class="result-pkg-detail">(Cerca de <span id="tubo-pkgs">0</span> sacos de 3kg)</span>
+                            </div>
+                            <div class="result-box">
+                                <span class="result-label">Gelo em Escamas (Ideal p/ Baldes)</span>
+                                <div class="result-val"><span id="escama-result">0</span> kg</div>
+                                <span class="result-pkg-detail">(Cerca de <span id="escama-pkgs">0</span> sacos de 10kg)</span>
+                            </div>
+                        </div>
+                        <div class="total-bar">
+                            Total Recomendado: <strong id="total-result">0 kg</strong>
+                        </div>
+                    </div>
+
+                    <button type="button" id="btn-order-calc" class="btn btn-primary btn-block btn-lg mt-md">
+                        <i data-lucide="message-circle"></i> Enviar Pedido via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA / LOCALIZAÇÃO -->
+    <section id="localizacao" class="section localizacao-section bg-light">
+        <div class="container">
+            <div class="grid grid-2-cols gap-lg align-center">
+                <div class="map-info">
+                    <div class="section-tag">Onde Estamos</div>
+                    <h2 class="section-title">Agilidade na Entrega e Fácil Acesso</h2>
+                    <p class="section-description">Nossa fábrica possui localização estratégica para garantir que o gelo chegue até você sem derreter. Atendemos comércios, postos de combustíveis, eventos e residências em toda a região com frota própria climatizada.</p>
+                    
+                    <div class="delivery-perks">
+                        <div class="perk-item">
+                            <i data-lucide="truck"></i>
+                            <div>
+                                <h4>Frota Refrigerada</h4>
+                                <p>Caminhões adequados que evitam o degelo durante o trajeto.</p>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <h4>Pontualidade Rigorosa</h4>
+                                <p>Agendamento flexível e entregas de emergência para parceiros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-visual">
+                    <div class="glass-card map-container-card">
+                        <!-- Google Maps Iframe com filtro minimalista em tons cinza-azulado via CSS -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197576508311!2d-46.6564943!3d-23.5613497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="350" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="google-map"
+                            title="Localização da Gelotin no Google Maps">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <div class="glass-card contact-grid">
+                <div class="contact-info-panel">
+                    <div class="section-tag dark">Contato Direto</div>
+                    <h2 class="contact-panel-title">Fale Conosco</h2>
+                    <p class="contact-panel-desc">Tire suas dúvidas, solicite cotações para grandes volumes ou agende uma entrega recorrente para o seu estabelecimento.</p>
+                    
+                    <div class="contact-details">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20atendente." target="_blank" rel="noopener noreferrer" class="contact-detail-item">
+                            <div class="contact-icon"><i data-lucide="message-square"></i></div>
+                            <div>
+                                <span>WhatsApp (Vendas)</span>
+                                <strong>(11) 99999-9999</strong>
+                            </div>
+                        </a>
+
+                        <a href="tel:+551133333333" class="contact-detail-item">
+                            <div class="contact-icon"><i data-lucide="phone-call"></i></div>
+                            <div>
+                                <span>Telefone Fixo</span>
+                                <strong>(11) 3333-3333</strong>
+                            </div>
+                        </a>
+
+                        <a href="mailto:contato@gelotin.com.br" class="contact-detail-item">
+                            <div class="contact-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <span>E-mail</span>
+                                <strong>contato@gelotin.com.br</strong>
+                            </div>
+                        </a>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"><i data-lucide="navigation"></i></div>
+                            <div>
+                                <span>Endereço</span>
+                                <strong>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"><i data-lucide="calendar"></i></div>
+                            <div>
+                                <span>Horário de Funcionamento</span>
+                                <strong>Segunda a Sábado: 07:00 às 19:00<br>Domingos e Feriados: 08:00 às 14:00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Nome Completo</label>
+                            <input type="text" id="form-name" class="form-control" required placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">WhatsApp / Telefone</label>
+                            <input type="tel" id="form-phone" class="form-control" required placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Assunto</label>
+                            <select id="form-subject" class="form-control">
+                                <option value="orcamento">Orçamento de Gelo</option>
+                                <option value="recorrente">Fornecimento Recorrente (Comércio)</option>
+                                <option value="evento">Gelo para Eventos</option>
+                                <option value="duvida">Outras Informações</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Mensagem / Pedido</label>
+                            <textarea id="form-message" class="form-control" rows="4" required placeholder="Descreva sua necessidade (ex: Preciso de 10 sacos de gelo em tubos para sábado)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <i data-lucide="send"></i> Enviar Mensagem via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-accent">GELO</span>TIN
+                </a>
+                <p>Produção industrial de gelo com pureza certificada e entrega expressa. O frescor que o seu negócio precisa.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre a Empresa</a></li>
+                    <li><a href="#produtos">Nossos Produtos</a></li>
+                    <li><a href="#calculadora">Calculadora de Gelo</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <h3>Gelotin Ltda.</h3>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>Qualidade da água monitorada em conformidade com as normas sanitárias vigentes da ANVISA.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Gelotin. Todos os direitos reservados. Feito com foco em pureza e qualidade.</p>
+                <p>Desenvolvido para máxima performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
