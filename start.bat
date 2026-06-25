@@ -6,5 +6,5 @@ echo   Acesse o site em: http://localhost:3000
 echo   Para encerrar o servidor, feche esta janela.
 echo ===================================================
 echo.
-node server.js
+node local-server/server.js
 pause

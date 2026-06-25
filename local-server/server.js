@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 3000;
+// Raiz do projeto é a pasta pai deste arquivo
+const ROOT_DIR = path.join(__dirname, '..');
 
 const MIME_TYPES = {
     '.html': 'text/html',
@@ -16,10 +18,10 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-    let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+    let filePath = path.join(ROOT_DIR, req.url === '/' ? 'index.html' : req.url);
     
     // Evitar acesso fora da pasta do projeto
-    if (!filePath.startsWith(__dirname)) {
+    if (!filePath.startsWith(ROOT_DIR)) {
         res.writeHead(403, { 'Content-Type': 'text/plain' });
         res.end('Acesso negado');
         return;
